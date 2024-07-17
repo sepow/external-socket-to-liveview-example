@@ -17,7 +17,7 @@ defmodule MyAppWeb.Router do
   scope "/", MyAppWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", TestLiveView
   end
 
   # Other scopes may use custom stacks.
